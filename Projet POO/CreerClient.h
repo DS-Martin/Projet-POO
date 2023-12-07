@@ -1,6 +1,9 @@
 #pragma once
-#include "Adresse.h";
-#include "Client.h";
+#include "Adresse.h"
+#include "Client.h"
+
+
+
 namespace ProjetPOO {
 
 	using namespace System::Data;
@@ -50,36 +53,36 @@ namespace ProjetPOO {
 		private: System::Windows::Forms::Label^ label6;
 		private: System::Windows::Forms::Label^ label7;
 		private: System::Windows::Forms::Label^ label8;
-		private: System::Windows::Forms::Label^ label9;
 
 
 
-		private: System::Windows::Forms::Label^ label13;
-		private: System::Windows::Forms::Label^ label14;
-		private: System::Windows::Forms::Label^ label15;
 
 
 
-		private: System::Windows::Forms::Label^ label19;
-		private: System::Windows::Forms::Label^ label20;
+
+
+
+
+
+
 
 
 
 		private: System::Windows::Forms::Label^ label24;
-		private: System::Windows::Forms::Label^ label25;
 
 
-		private: System::Windows::Forms::Label^ label28;
-		private: System::Windows::Forms::Label^ label10;
-		private: System::Windows::Forms::Label^ label11;
-		private: System::Windows::Forms::Label^ label12;
-		private: System::Windows::Forms::Label^ label16;
-		private: System::Windows::Forms::Label^ label17;
-		private: System::Windows::Forms::Label^ label18;
-		private: System::Windows::Forms::Label^ label21;
-		private: System::Windows::Forms::Label^ label22;
-		private: System::Windows::Forms::Label^ label23;
-		private: System::Windows::Forms::Label^ label26;
+
+
+
+
+
+
+
+
+
+
+
+
 		private: System::Windows::Forms::Button^ button1;
 		private: System::Windows::Forms::ComboBox^ comboBoxMois;
 
@@ -105,19 +108,40 @@ namespace ProjetPOO {
 
 
 
-		private: System::Windows::Forms::TextBox^ textBox8;
-		private: System::Windows::Forms::TextBox^ textBox9;
-		private: System::Windows::Forms::TextBox^ textBox10;
-		private: System::Windows::Forms::TextBox^ textBox11;
-		private: System::Windows::Forms::TextBox^ textBox12;
-		private: System::Windows::Forms::TextBox^ textBox13;
-		private: System::Windows::Forms::TextBox^ textBox14;
-		private: System::Windows::Forms::TextBox^ textBox15;
-		private: System::Windows::Forms::TextBox^ textBox16;
-		private: System::Windows::Forms::TextBox^ textBox17;
-		private: System::Windows::Forms::TextBox^ textBox18;
-		private: System::Windows::Forms::TextBox^ textBox19;
+
+
+
+
+
+
+
+
+
+
+
+
 		private: System::Windows::Forms::NumericUpDown^ UpDownNumAdr;
+		private: System::Windows::Forms::Label^ label9;
+		private: System::Windows::Forms::NumericUpDown^ UpDownAdr2;
+		private: System::Windows::Forms::TextBox^ textBoxVille2;
+
+
+		private: System::Windows::Forms::Label^ label10;
+		private: System::Windows::Forms::Label^ label11;
+private: System::Windows::Forms::TextBox^ textBoxRue2;
+
+		private: System::Windows::Forms::Label^ label12;
+private: System::Windows::Forms::TextBox^ textBoxCP2;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,25 +170,7 @@ namespace ProjetPOO {
 				this->label6 = (gcnew System::Windows::Forms::Label());
 				this->label7 = (gcnew System::Windows::Forms::Label());
 				this->label8 = (gcnew System::Windows::Forms::Label());
-				this->label9 = (gcnew System::Windows::Forms::Label());
-				this->label13 = (gcnew System::Windows::Forms::Label());
-				this->label14 = (gcnew System::Windows::Forms::Label());
-				this->label15 = (gcnew System::Windows::Forms::Label());
-				this->label19 = (gcnew System::Windows::Forms::Label());
-				this->label20 = (gcnew System::Windows::Forms::Label());
 				this->label24 = (gcnew System::Windows::Forms::Label());
-				this->label25 = (gcnew System::Windows::Forms::Label());
-				this->label28 = (gcnew System::Windows::Forms::Label());
-				this->label10 = (gcnew System::Windows::Forms::Label());
-				this->label11 = (gcnew System::Windows::Forms::Label());
-				this->label12 = (gcnew System::Windows::Forms::Label());
-				this->label16 = (gcnew System::Windows::Forms::Label());
-				this->label17 = (gcnew System::Windows::Forms::Label());
-				this->label18 = (gcnew System::Windows::Forms::Label());
-				this->label21 = (gcnew System::Windows::Forms::Label());
-				this->label22 = (gcnew System::Windows::Forms::Label());
-				this->label23 = (gcnew System::Windows::Forms::Label());
-				this->label26 = (gcnew System::Windows::Forms::Label());
 				this->button1 = (gcnew System::Windows::Forms::Button());
 				this->comboBoxMois = (gcnew System::Windows::Forms::ComboBox());
 				this->label27 = (gcnew System::Windows::Forms::Label());
@@ -176,20 +182,17 @@ namespace ProjetPOO {
 				this->textBoxVille = (gcnew System::Windows::Forms::TextBox());
 				this->textBoxRue = (gcnew System::Windows::Forms::TextBox());
 				this->textBoxCodePostal = (gcnew System::Windows::Forms::TextBox());
-				this->textBox8 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox9 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox10 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox11 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox12 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox13 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox14 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox15 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox16 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox17 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox18 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox19 = (gcnew System::Windows::Forms::TextBox());
 				this->UpDownNumAdr = (gcnew System::Windows::Forms::NumericUpDown());
+				this->label9 = (gcnew System::Windows::Forms::Label());
+				this->UpDownAdr2 = (gcnew System::Windows::Forms::NumericUpDown());
+				this->textBoxVille2 = (gcnew System::Windows::Forms::TextBox());
+				this->label10 = (gcnew System::Windows::Forms::Label());
+				this->label11 = (gcnew System::Windows::Forms::Label());
+				this->textBoxRue2 = (gcnew System::Windows::Forms::TextBox());
+				this->label12 = (gcnew System::Windows::Forms::Label());
+				this->textBoxCP2 = (gcnew System::Windows::Forms::TextBox());
 				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownNumAdr))->BeginInit();
+				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownAdr2))->BeginInit();
 				this->SuspendLayout();
 				// 
 				// label1
@@ -212,6 +215,7 @@ namespace ProjetPOO {
 				this->label2->Size = System::Drawing::Size(64, 20);
 				this->label2->TabIndex = 1;
 				this->label2->Text = L"Prénom";
+				this->label2->Click += gcnew System::EventHandler(this, &CreerClient::label2_Click);
 				// 
 				// label3
 				// 
@@ -222,6 +226,7 @@ namespace ProjetPOO {
 				this->label3->Size = System::Drawing::Size(142, 20);
 				this->label3->TabIndex = 2;
 				this->label3->Text = L"Date de naissance";
+				this->label3->Click += gcnew System::EventHandler(this, &CreerClient::label3_Click);
 				// 
 				// label4
 				// 
@@ -266,72 +271,13 @@ namespace ProjetPOO {
 				// label8
 				// 
 				this->label8->AutoSize = true;
-				this->label8->Location = System::Drawing::Point(56, 365);
+				this->label8->Location = System::Drawing::Point(27, 365);
 				this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label8->Name = L"label8";
-				this->label8->Size = System::Drawing::Size(206, 20);
+				this->label8->Size = System::Drawing::Size(251, 20);
 				this->label8->TabIndex = 7;
-				this->label8->Text = L"Ajouter une autre adresse \?";
-				// 
-				// label9
-				// 
-				this->label9->AutoSize = true;
-				this->label9->Location = System::Drawing::Point(56, 422);
-				this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label9->Name = L"label9";
-				this->label9->Size = System::Drawing::Size(199, 20);
-				this->label9->TabIndex = 8;
-				this->label9->Text = L"Autre adresse de livraison :";
-				// 
-				// label13
-				// 
-				this->label13->AutoSize = true;
-				this->label13->Location = System::Drawing::Point(56, 634);
-				this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label13->Name = L"label13";
-				this->label13->Size = System::Drawing::Size(332, 20);
-				this->label13->TabIndex = 12;
-				this->label13->Text = L"Même adresse pour l\'adresse de facturation \?";
-				// 
-				// label14
-				// 
-				this->label14->AutoSize = true;
-				this->label14->Location = System::Drawing::Point(56, 690);
-				this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label14->Name = L"label14";
-				this->label14->Size = System::Drawing::Size(82, 20);
-				this->label14->TabIndex = 13;
-				this->label14->Text = L"Laquelle \?";
-				// 
-				// label15
-				// 
-				this->label15->AutoSize = true;
-				this->label15->Location = System::Drawing::Point(56, 741);
-				this->label15->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label15->Name = L"label15";
-				this->label15->Size = System::Drawing::Size(178, 20);
-				this->label15->TabIndex = 14;
-				this->label15->Text = L"Adresse de facturation :";
-				// 
-				// label19
-				// 
-				this->label19->AutoSize = true;
-				this->label19->Location = System::Drawing::Point(56, 962);
-				this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label19->Name = L"label19";
-				this->label19->Size = System::Drawing::Size(206, 20);
-				this->label19->TabIndex = 18;
-				this->label19->Text = L"Ajouter une autre adresse \?";
-				// 
-				// label20
-				// 
-				this->label20->AutoSize = true;
-				this->label20->Location = System::Drawing::Point(56, 1014);
-				this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label20->Name = L"label20";
-				this->label20->Size = System::Drawing::Size(219, 20);
-				this->label20->TabIndex = 19;
-				this->label20->Text = L"Autre adresse de facturation :";
+				this->label8->Text = L"Adresse de facturation différente\?";
+				this->label8->Click += gcnew System::EventHandler(this, &CreerClient::label8_Click);
 				// 
 				// label24
 				// 
@@ -343,130 +289,9 @@ namespace ProjetPOO {
 				this->label24->TabIndex = 23;
 				this->label24->Text = L"Ville";
 				// 
-				// label25
-				// 
-				this->label25->AutoSize = true;
-				this->label25->Location = System::Drawing::Point(308, 470);
-				this->label25->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label25->Name = L"label25";
-				this->label25->Size = System::Drawing::Size(38, 20);
-				this->label25->TabIndex = 24;
-				this->label25->Text = L"Ville";
-				this->label25->Click += gcnew System::EventHandler(this, &CreerClient::label25_Click);
-				// 
-				// label28
-				// 
-				this->label28->AutoSize = true;
-				this->label28->Location = System::Drawing::Point(60, 470);
-				this->label28->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label28->Name = L"label28";
-				this->label28->Size = System::Drawing::Size(138, 20);
-				this->label28->TabIndex = 27;
-				this->label28->Text = L"Numéro d\'adresse";
-				// 
-				// label10
-				// 
-				this->label10->AutoSize = true;
-				this->label10->Location = System::Drawing::Point(60, 577);
-				this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label10->Name = L"label10";
-				this->label10->Size = System::Drawing::Size(94, 20);
-				this->label10->TabIndex = 29;
-				this->label10->Text = L"Code postal";
-				// 
-				// label11
-				// 
-				this->label11->AutoSize = true;
-				this->label11->Location = System::Drawing::Point(60, 522);
-				this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label11->Name = L"label11";
-				this->label11->Size = System::Drawing::Size(107, 20);
-				this->label11->TabIndex = 28;
-				this->label11->Text = L"Nom de la rue";
-				// 
-				// label12
-				// 
-				this->label12->AutoSize = true;
-				this->label12->Location = System::Drawing::Point(60, 896);
-				this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label12->Name = L"label12";
-				this->label12->Size = System::Drawing::Size(94, 20);
-				this->label12->TabIndex = 33;
-				this->label12->Text = L"Code postal";
-				// 
-				// label16
-				// 
-				this->label16->AutoSize = true;
-				this->label16->Location = System::Drawing::Point(60, 842);
-				this->label16->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label16->Name = L"label16";
-				this->label16->Size = System::Drawing::Size(107, 20);
-				this->label16->TabIndex = 32;
-				this->label16->Text = L"Nom de la rue";
-				// 
-				// label17
-				// 
-				this->label17->AutoSize = true;
-				this->label17->Location = System::Drawing::Point(60, 789);
-				this->label17->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label17->Name = L"label17";
-				this->label17->Size = System::Drawing::Size(138, 20);
-				this->label17->TabIndex = 31;
-				this->label17->Text = L"Numéro d\'adresse";
-				// 
-				// label18
-				// 
-				this->label18->AutoSize = true;
-				this->label18->Location = System::Drawing::Point(308, 789);
-				this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label18->Name = L"label18";
-				this->label18->Size = System::Drawing::Size(38, 20);
-				this->label18->TabIndex = 30;
-				this->label18->Text = L"Ville";
-				// 
-				// label21
-				// 
-				this->label21->AutoSize = true;
-				this->label21->Location = System::Drawing::Point(60, 1171);
-				this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label21->Name = L"label21";
-				this->label21->Size = System::Drawing::Size(94, 20);
-				this->label21->TabIndex = 37;
-				this->label21->Text = L"Code postal";
-				// 
-				// label22
-				// 
-				this->label22->AutoSize = true;
-				this->label22->Location = System::Drawing::Point(60, 1117);
-				this->label22->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label22->Name = L"label22";
-				this->label22->Size = System::Drawing::Size(107, 20);
-				this->label22->TabIndex = 36;
-				this->label22->Text = L"Nom de la rue";
-				// 
-				// label23
-				// 
-				this->label23->AutoSize = true;
-				this->label23->Location = System::Drawing::Point(60, 1064);
-				this->label23->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label23->Name = L"label23";
-				this->label23->Size = System::Drawing::Size(138, 20);
-				this->label23->TabIndex = 35;
-				this->label23->Text = L"Numéro d\'adresse";
-				// 
-				// label26
-				// 
-				this->label26->AutoSize = true;
-				this->label26->Location = System::Drawing::Point(308, 1064);
-				this->label26->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-				this->label26->Name = L"label26";
-				this->label26->Size = System::Drawing::Size(38, 20);
-				this->label26->TabIndex = 34;
-				this->label26->Text = L"Ville";
-				// 
 				// button1
 				// 
-				this->button1->Location = System::Drawing::Point(445, 1210);
+				this->button1->Location = System::Drawing::Point(550, 676);
 				this->button1->Margin = System::Windows::Forms::Padding(2);
 				this->button1->Name = L"button1";
 				this->button1->Size = System::Drawing::Size(124, 38);
@@ -580,7 +405,7 @@ namespace ProjetPOO {
 				// textBoxRue
 				// 
 				this->textBoxRue->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxRue->Location = System::Drawing::Point(170, 254);
+				this->textBoxRue->Location = System::Drawing::Point(171, 254);
 				this->textBoxRue->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxRue->Name = L"textBoxRue";
 				this->textBoxRue->Size = System::Drawing::Size(422, 26);
@@ -595,102 +420,6 @@ namespace ProjetPOO {
 				this->textBoxCodePostal->Size = System::Drawing::Size(122, 26);
 				this->textBoxCodePostal->TabIndex = 50;
 				// 
-				// textBox8
-				// 
-				this->textBox8->Location = System::Drawing::Point(176, 522);
-				this->textBox8->Margin = System::Windows::Forms::Padding(2);
-				this->textBox8->Name = L"textBox8";
-				this->textBox8->Size = System::Drawing::Size(417, 26);
-				this->textBox8->TabIndex = 52;
-				// 
-				// textBox9
-				// 
-				this->textBox9->Location = System::Drawing::Point(200, 465);
-				this->textBox9->Margin = System::Windows::Forms::Padding(2);
-				this->textBox9->Name = L"textBox9";
-				this->textBox9->Size = System::Drawing::Size(78, 26);
-				this->textBox9->TabIndex = 53;
-				// 
-				// textBox10
-				// 
-				this->textBox10->Location = System::Drawing::Point(352, 465);
-				this->textBox10->Margin = System::Windows::Forms::Padding(2);
-				this->textBox10->Name = L"textBox10";
-				this->textBox10->Size = System::Drawing::Size(241, 26);
-				this->textBox10->TabIndex = 54;
-				// 
-				// textBox11
-				// 
-				this->textBox11->Location = System::Drawing::Point(176, 574);
-				this->textBox11->Margin = System::Windows::Forms::Padding(2);
-				this->textBox11->Name = L"textBox11";
-				this->textBox11->Size = System::Drawing::Size(122, 26);
-				this->textBox11->TabIndex = 55;
-				// 
-				// textBox12
-				// 
-				this->textBox12->Location = System::Drawing::Point(174, 894);
-				this->textBox12->Margin = System::Windows::Forms::Padding(2);
-				this->textBox12->Name = L"textBox12";
-				this->textBox12->Size = System::Drawing::Size(122, 26);
-				this->textBox12->TabIndex = 59;
-				// 
-				// textBox13
-				// 
-				this->textBox13->Location = System::Drawing::Point(350, 784);
-				this->textBox13->Margin = System::Windows::Forms::Padding(2);
-				this->textBox13->Name = L"textBox13";
-				this->textBox13->Size = System::Drawing::Size(241, 26);
-				this->textBox13->TabIndex = 58;
-				// 
-				// textBox14
-				// 
-				this->textBox14->Location = System::Drawing::Point(199, 784);
-				this->textBox14->Margin = System::Windows::Forms::Padding(2);
-				this->textBox14->Name = L"textBox14";
-				this->textBox14->Size = System::Drawing::Size(78, 26);
-				this->textBox14->TabIndex = 57;
-				// 
-				// textBox15
-				// 
-				this->textBox15->Location = System::Drawing::Point(174, 842);
-				this->textBox15->Margin = System::Windows::Forms::Padding(2);
-				this->textBox15->Name = L"textBox15";
-				this->textBox15->Size = System::Drawing::Size(417, 26);
-				this->textBox15->TabIndex = 56;
-				// 
-				// textBox16
-				// 
-				this->textBox16->Location = System::Drawing::Point(174, 1169);
-				this->textBox16->Margin = System::Windows::Forms::Padding(2);
-				this->textBox16->Name = L"textBox16";
-				this->textBox16->Size = System::Drawing::Size(122, 26);
-				this->textBox16->TabIndex = 63;
-				// 
-				// textBox17
-				// 
-				this->textBox17->Location = System::Drawing::Point(350, 1059);
-				this->textBox17->Margin = System::Windows::Forms::Padding(2);
-				this->textBox17->Name = L"textBox17";
-				this->textBox17->Size = System::Drawing::Size(241, 26);
-				this->textBox17->TabIndex = 62;
-				// 
-				// textBox18
-				// 
-				this->textBox18->Location = System::Drawing::Point(199, 1059);
-				this->textBox18->Margin = System::Windows::Forms::Padding(2);
-				this->textBox18->Name = L"textBox18";
-				this->textBox18->Size = System::Drawing::Size(78, 26);
-				this->textBox18->TabIndex = 61;
-				// 
-				// textBox19
-				// 
-				this->textBox19->Location = System::Drawing::Point(174, 1117);
-				this->textBox19->Margin = System::Windows::Forms::Padding(2);
-				this->textBox19->Name = L"textBox19";
-				this->textBox19->Size = System::Drawing::Size(417, 26);
-				this->textBox19->TabIndex = 60;
-				// 
 				// UpDownNumAdr
 				// 
 				this->UpDownNumAdr->Location = System::Drawing::Point(209, 204);
@@ -700,26 +429,97 @@ namespace ProjetPOO {
 				this->UpDownNumAdr->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 				this->UpDownNumAdr->ValueChanged += gcnew System::EventHandler(this, &CreerClient::numericUpDown1_ValueChanged);
 				// 
+				// label9
+				// 
+				this->label9->AutoSize = true;
+				this->label9->Location = System::Drawing::Point(27, 424);
+				this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+				this->label9->Name = L"label9";
+				this->label9->Size = System::Drawing::Size(138, 20);
+				this->label9->TabIndex = 65;
+				this->label9->Text = L"Numéro d\'adresse";
+				// 
+				// UpDownAdr2
+				// 
+				this->UpDownAdr2->Location = System::Drawing::Point(170, 422);
+				this->UpDownAdr2->Name = L"UpDownAdr2";
+				this->UpDownAdr2->Size = System::Drawing::Size(79, 26);
+				this->UpDownAdr2->TabIndex = 66;
+				this->UpDownAdr2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+				// 
+				// textBoxVille2
+				// 
+				this->textBoxVille2->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->textBoxVille2->Location = System::Drawing::Point(416, 421);
+				this->textBoxVille2->Margin = System::Windows::Forms::Padding(2);
+				this->textBoxVille2->Name = L"textBoxVille2";
+				this->textBoxVille2->Size = System::Drawing::Size(241, 26);
+				this->textBoxVille2->TabIndex = 67;
+				// 
+				// label10
+				// 
+				this->label10->AutoSize = true;
+				this->label10->Location = System::Drawing::Point(374, 424);
+				this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+				this->label10->Name = L"label10";
+				this->label10->Size = System::Drawing::Size(38, 20);
+				this->label10->TabIndex = 68;
+				this->label10->Text = L"Ville";
+				// 
+				// label11
+				// 
+				this->label11->AutoSize = true;
+				this->label11->Location = System::Drawing::Point(27, 479);
+				this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+				this->label11->Name = L"label11";
+				this->label11->Size = System::Drawing::Size(107, 20);
+				this->label11->TabIndex = 69;
+				this->label11->Text = L"Nom de la rue";
+				// 
+				// textBoxRue2
+				// 
+				this->textBoxRue2->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->textBoxRue2->Location = System::Drawing::Point(138, 476);
+				this->textBoxRue2->Margin = System::Windows::Forms::Padding(2);
+				this->textBoxRue2->Name = L"textBoxRue2";
+				this->textBoxRue2->Size = System::Drawing::Size(422, 26);
+				this->textBoxRue2->TabIndex = 70;
+				// 
+				// label12
+				// 
+				this->label12->AutoSize = true;
+				this->label12->Location = System::Drawing::Point(36, 549);
+				this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+				this->label12->Name = L"label12";
+				this->label12->Size = System::Drawing::Size(94, 20);
+				this->label12->TabIndex = 71;
+				this->label12->Text = L"Code postal";
+				// 
+				// textBoxCP2
+				// 
+				this->textBoxCP2->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->textBoxCP2->Location = System::Drawing::Point(138, 546);
+				this->textBoxCP2->Margin = System::Windows::Forms::Padding(2);
+				this->textBoxCP2->Name = L"textBoxCP2";
+				this->textBoxCP2->Size = System::Drawing::Size(122, 26);
+				this->textBoxCP2->TabIndex = 72;
+				// 
 				// CreerClient
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 				this->AutoScroll = true;
 				this->BackColor = System::Drawing::SystemColors::HighlightText;
-				this->ClientSize = System::Drawing::Size(685, 450);
+				this->ClientSize = System::Drawing::Size(685, 725);
+				this->Controls->Add(this->textBoxCP2);
+				this->Controls->Add(this->label12);
+				this->Controls->Add(this->textBoxRue2);
+				this->Controls->Add(this->label11);
+				this->Controls->Add(this->label10);
+				this->Controls->Add(this->textBoxVille2);
+				this->Controls->Add(this->UpDownAdr2);
+				this->Controls->Add(this->label9);
 				this->Controls->Add(this->UpDownNumAdr);
-				this->Controls->Add(this->textBox16);
-				this->Controls->Add(this->textBox17);
-				this->Controls->Add(this->textBox18);
-				this->Controls->Add(this->textBox19);
-				this->Controls->Add(this->textBox12);
-				this->Controls->Add(this->textBox13);
-				this->Controls->Add(this->textBox14);
-				this->Controls->Add(this->textBox15);
-				this->Controls->Add(this->textBox11);
-				this->Controls->Add(this->textBox10);
-				this->Controls->Add(this->textBox9);
-				this->Controls->Add(this->textBox8);
 				this->Controls->Add(this->textBoxCodePostal);
 				this->Controls->Add(this->textBoxRue);
 				this->Controls->Add(this->textBoxVille);
@@ -731,25 +531,7 @@ namespace ProjetPOO {
 				this->Controls->Add(this->label27);
 				this->Controls->Add(this->comboBoxMois);
 				this->Controls->Add(this->button1);
-				this->Controls->Add(this->label21);
-				this->Controls->Add(this->label22);
-				this->Controls->Add(this->label23);
-				this->Controls->Add(this->label26);
-				this->Controls->Add(this->label12);
-				this->Controls->Add(this->label16);
-				this->Controls->Add(this->label17);
-				this->Controls->Add(this->label18);
-				this->Controls->Add(this->label10);
-				this->Controls->Add(this->label11);
-				this->Controls->Add(this->label28);
-				this->Controls->Add(this->label25);
 				this->Controls->Add(this->label24);
-				this->Controls->Add(this->label20);
-				this->Controls->Add(this->label19);
-				this->Controls->Add(this->label15);
-				this->Controls->Add(this->label14);
-				this->Controls->Add(this->label13);
-				this->Controls->Add(this->label9);
 				this->Controls->Add(this->label8);
 				this->Controls->Add(this->label7);
 				this->Controls->Add(this->label6);
@@ -765,6 +547,7 @@ namespace ProjetPOO {
 				this->Text = L"CreerClient";
 				this->Load += gcnew System::EventHandler(this, &CreerClient::CreerClient_Load);
 				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownNumAdr))->EndInit();
+				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownAdr2))->EndInit();
 				this->ResumeLayout(false);
 				this->PerformLayout();
 
@@ -790,86 +573,109 @@ namespace ProjetPOO {
 			String^ MoisClient = comboBoxMois->Text;
 			String^ YearClient = comboBoxAnnee->Text;
 			String^ dateNaissance = String::Format("{0}-{1}-{2}", YearClient, MoisClient, JourClient);
-			// ^ (membres de la table Client ( Martin ))
-			String^ NumeroRue = UpDownNumAdr->Text;
-			String^ NomRue = textBoxRue->Text;
-			String^ NomVille = textBoxVille->Text;
-			String^ CodePostal = textBoxCodePostal->Text;
 			Client^ nouveauClient = gcnew Client();
 			nouveauClient->set_Nom(nomClient);
 			nouveauClient->set_Prenom(prenomClient);
 			nouveauClient->set_Date_de_Naissance(dateNaissance);
-
+			String^ NumeroRue = UpDownNumAdr->Text;
+			String^ NomRue = textBoxRue->Text;
+			String^ NomVille = textBoxVille->Text;
+			String^ CodePostal = textBoxCodePostal->Text;
+			int TypeAdresse = 0;
+			int TypeAdresse2 = 1;
 			int numeroRue;
 			if (!Int32::TryParse(NumeroRue, numeroRue)) {
-				
+
 				MessageBox::Show("Le numéro de rue doit être un nombre entier.", "Err conversion", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				return; 
+				return;
 			}
 			Adresse^ nouvelleAdresse = gcnew Adresse(numeroRue, NomRue, NomVille, CodePostal);
-			
-
-			
-					
-			
 
 			// Connexion à la base de données
 			String^ connectionString = "Data Source=MARTIN_GOA;Initial Catalog=Projet;Integrated Security=True";
 			SqlConnection^ connection = gcnew SqlConnection(connectionString);
 
 			try {
-				
 				connection->Open();
 
-				// Creation des requêtes modifiées par la suite (Martin)
-				
+				// Insertion des données dans la table Client
 				String^ queryClient = "INSERT INTO CLIENT (NOM, PRENOM, DATE_NAISSANCE) VALUES (@Nom, @Prenom, @Date_de_Naissance)";
-				String^ queryAdresse = "INSERT INTO ADRESSE(NUMERO, NOM_RUE, NOM_VILLE, CODE_POSTAL) VALUES (@NumeroRue, @NomRue, @NomVille, @CodePostal)";
-				String^ queryPosseder = "INSERT INTO Possede1 (ID_CLIENT, ID_ADRESSE) VALUES (@IDClient, @IDAdresse)";
-				String^ queryMaxID = "SELECT MAX(ID_Adresse) FROM Possede1";
-				
-				// génération des commandes (Martin)
 				SqlCommand^ commandClient = gcnew SqlCommand(queryClient, connection);
+
+				commandClient->Parameters->Add("@Nom", SqlDbType::VarChar, 50)->Value = nomClient;
+				commandClient->Parameters->Add("@Prenom", SqlDbType::VarChar, 50)->Value = prenomClient;
+				commandClient->Parameters->Add("@Date_de_Naissance", SqlDbType::Date)->Value = dateNaissance;
+				commandClient->ExecuteNonQuery();
+
+				// Récupération de l'ID_Client inséré
+				String^ queryGetIDClient = "SELECT IDENT_CURRENT('CLIENT') AS IDClient";
+				SqlCommand^ commandGetIDClient = gcnew SqlCommand(queryGetIDClient, connection);
+				Object^ resultClient = commandGetIDClient->ExecuteScalar();
+				
+				int idClient = Convert::ToInt32(resultClient);
+				nouveauClient->set_ID_Client(idClient);
+				
+
+				// Insertion des données dans la table Adresse
+				String^ queryAdresse = "INSERT INTO ADRESSE(NUMERO, NOM_RUE, NOM_VILLE, CODE_POSTAL, TYPE_ADRESSE) VALUES (@NumeroRue, @NomRue, @NomVille, @CodePostal, @TypeAdresse)";
 				SqlCommand^ commandAdresse = gcnew SqlCommand(queryAdresse, connection);
-				SqlCommand^ commandMaxID = gcnew SqlCommand(queryMaxID, connection);
-				
 
-
-				SqlCommand^ commandPosseder = gcnew SqlCommand(queryPosseder, connection);
-				int idClient = Convert::ToInt32(commandClient->ExecuteScalar());
-				Object^ result = commandMaxID->ExecuteScalar();
-				int idAdresse;
-
-				if (result == nullptr || result == DBNull::Value) {
-					
-					idAdresse = 1;
-				}
-				else {
-				
-					idAdresse = Convert::ToInt32(result) + 1;
-				}
-
-				commandPosseder->Parameters->AddWithValue("@IDClient", idClient);
-				commandPosseder->Parameters->AddWithValue("@IDAdresse", idAdresse);
-				
-				// Ajout des Param de la command Adresse (Martin)
-				commandClient->Parameters->AddWithValue("@Nom", nouveauClient->get_Nom());
-				commandClient->Parameters->AddWithValue("@Prenom", nouveauClient->get_Prenom());
-				commandClient->Parameters->AddWithValue("@Date_de_Naissance", SqlDbType::Date)->Value = nouveauClient->get_Date_de_Naissance();
-				// Ajout des Param de la command Adresse (Martin)
 				commandAdresse->Parameters->AddWithValue("@NumeroRue", nouvelleAdresse->Numero);
 				commandAdresse->Parameters->AddWithValue("@NomRue", nouvelleAdresse->NomRue);
 				commandAdresse->Parameters->AddWithValue("@NomVille", nouvelleAdresse->NomVille);
 				commandAdresse->Parameters->AddWithValue("@CodePostal", nouvelleAdresse->CodePostal);
-				// Gestion des ID adresses et client dans la table POSSEDE1
-				
-				// Exec des commandes (Martin)
-				commandClient->ExecuteNonQuery();
+				commandAdresse->Parameters->AddWithValue("@TypeAdresse", TypeAdresse);
 				commandAdresse->ExecuteNonQuery();
+
+				// Récupération de l'ID_Adresse inséré
+				String^ queryGetIDAdresse = "SELECT IDENT_CURRENT('ADRESSE') AS IDAdresse";
+				SqlCommand^ commandGetIDAdresse = gcnew SqlCommand(queryGetIDAdresse, connection);
+				Object^ resultAdresse = commandGetIDAdresse->ExecuteScalar();
+				int idAdresse = Convert::ToInt32(resultAdresse);
+
+
+				// Insertion des données dans la table Possede1
+				String^ queryPosseder = "INSERT INTO Possede1 (ID_CLIENT, ID_ADRESSE) VALUES (@IDClient, @IDAdresse)";
+				SqlCommand^ commandPosseder = gcnew SqlCommand(queryPosseder, connection);
+
+				commandPosseder->Parameters->Add("@IDClient", SqlDbType::Int)->Value = idClient;
+				commandPosseder->Parameters->Add("@IDAdresse", SqlDbType::Int)->Value = idAdresse;
 				commandPosseder->ExecuteNonQuery();
+
+				if (textBoxVille2->Text != "" && UpDownAdr2->Text != "0") {
+					String^ NumeroRue2 = UpDownAdr2->Text;
+					String^ NomRue2 = textBoxRue2->Text;
+					String^ NomVille2 = textBoxVille2->Text;
+					String^ CodePostal2 = textBoxCP2->Text;
+					int numeroRue2;
+					if (!Int32::TryParse(NumeroRue2, numeroRue2)) {
+
+						MessageBox::Show("Le numéro de rue doit être un nombre entier.", "Err conversion", MessageBoxButtons::OK, MessageBoxIcon::Error);
+						return;
+					}
+					Adresse^ nouvelleAdresse2 = gcnew Adresse(numeroRue2, NomRue2, NomVille2, CodePostal2);
+					
+					SqlCommand^ commandAdresse2 = gcnew SqlCommand(queryAdresse, connection);
+					commandAdresse2->Parameters->AddWithValue("@NumeroRue", nouvelleAdresse2->Numero);
+					commandAdresse2->Parameters->AddWithValue("@NomRue", nouvelleAdresse2->NomRue);
+					commandAdresse2->Parameters->AddWithValue("@NomVille", nouvelleAdresse2->NomVille);
+					commandAdresse2->Parameters->AddWithValue("@CodePostal", nouvelleAdresse2->CodePostal);
+					commandAdresse2->Parameters->AddWithValue("@TypeAdresse", TypeAdresse2);
+					commandAdresse2->ExecuteNonQuery();
+					
+					String^ queryGetIDAdresse2 = "SELECT IDENT_CURRENT('ADRESSE') AS IDAdresse";
+					SqlCommand^ commandGetIDAdresse2 = gcnew SqlCommand(queryGetIDAdresse2, connection);
+					Object^ resultAdresse = commandGetIDAdresse2->ExecuteScalar();
+					int idAdresse2 = Convert::ToInt32(resultAdresse);
+
+					SqlCommand^ commandPosseder2 = gcnew SqlCommand(queryPosseder, connection);
+					commandPosseder2->Parameters->Add("@IDClient", SqlDbType::Int)->Value = idClient;
+					commandPosseder2->Parameters->Add("@IDAdresse", SqlDbType::Int)->Value = idAdresse2;
+					commandPosseder2->ExecuteNonQuery();
+				}
 				// Afficher un message de réussite
 				MessageBox::Show("Le Client a été ajouté à la base de données avec succès.", "Succès", MessageBoxButtons::OK, MessageBoxIcon::Information);
-			}	
+			}
 			catch (Exception^ ex) {
 				// Gérer les erreurs (affichage ou journalisation)
 				MessageBox::Show("Erreur lors de l'ajout du client : " + ex->Message, "Erreur", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -877,8 +683,14 @@ namespace ProjetPOO {
 			finally {
 				// Fermer la connexion, même en cas d'erreur
 				connection->Close();
+				
+
+					
+
+			
 			}
 		}
+
 		private: System::Void textBoxPrenom_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		}
 
@@ -888,10 +700,24 @@ namespace ProjetPOO {
 		}
 		private: System::Void numericUpDown1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
 		}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void buttonOuiAdresse_Click(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 	}
 }
-
 
 
 
