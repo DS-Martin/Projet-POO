@@ -606,7 +606,8 @@ private: void ChargerAdresseFacturation(int clientId) {
 
 		if (reader->Read()) {
 			// Récupérez l'ID de l'adresse de facturation
-			int adresseFacturationId = Convert::ToInt32(reader["ID_Adresse"]);
+			adresseFacturationId = Convert::ToInt32(reader["ID_Adresse"]);
+
 			reader->Close();
 
 			// Requête pour les détails de l'adresse de facturation
@@ -725,7 +726,7 @@ private: void MettreAJourAdresse(int adresseId, String^ champ, String^ valeur) {
         String^ query = "UPDATE dbo.ADRESSE SET " + champ + " = @Valeur WHERE ID_ADRESSE = @AdresseID";
         SqlCommand^ command = gcnew SqlCommand(query, connection);
         command->Parameters->AddWithValue("@Valeur", valeur);
-        command->Parameters->AddWithValue("@AdresseID", adresseId);
+		command->Parameters->AddWithValue("@AdresseID", adresseId);
         command->ExecuteNonQuery();
     }
     catch (Exception^ ex) {
@@ -857,13 +858,21 @@ private: System::Void textBoxCodePostal_TextChanged(System::Object^ sender, Syst
 	String^ nouveauCodePostal = textBoxCodePostal->Text;
 	MettreAJourAdresse(adresseLivraisonId, "CODE_POSTAL", nouveauCodePostal);
 }
+
 private: System::Void label14_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	String^ nouveauCodePostal = textBoxCodePostal2->Text;
+	MettreAJourAdresse(adresseFacturationId, "CODE_POSTAL", nouveauCodePostal);
 }
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	String^ nouveauNomRue = textBoxNomRue2->Text;
+	MettreAJourAdresse(adresseFacturationId, "NOM_RUE", nouveauNomRue);
 }
 private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	String^ nouveauNomVille = textBoxNomVille2->Text;
+	MettreAJourAdresse(adresseFacturationId, "NOM_VILLE", nouveauNomVille);
+	
 }
 private: System::Void label10_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -874,6 +883,8 @@ private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void label13_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void numericUpDown1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
+	int nouveauNumero = static_cast<int>(UpDownAdr2->Value);
+	MettreAJourAdresse(adresseFacturationId, "NUMERO", nouveauNumero.ToString());
 }
 };
 }
