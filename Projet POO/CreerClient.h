@@ -1,8 +1,11 @@
 #pragma once
 #include "Adresse.h"
 #include "Client.h"
-
-
+#include "CreerClient.h"
+#include "ModifierClient.h"
+#include "SupprimerClient.h"
+#include "AfficherClient.h"
+#include "DebugAdresse.h"
 
 namespace ProjetPOO {
 
@@ -132,6 +135,14 @@ private: System::Windows::Forms::TextBox^ textBoxRue2;
 
 		private: System::Windows::Forms::Label^ label12;
 private: System::Windows::Forms::TextBox^ textBoxCP2;
+private: System::Windows::Forms::Label^ label13;
+
+
+
+
+
+
+
 
 
 
@@ -191,6 +202,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				this->textBoxRue2 = (gcnew System::Windows::Forms::TextBox());
 				this->label12 = (gcnew System::Windows::Forms::Label());
 				this->textBoxCP2 = (gcnew System::Windows::Forms::TextBox());
+				this->label13 = (gcnew System::Windows::Forms::Label());
 				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownNumAdr))->BeginInit();
 				(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->UpDownAdr2))->BeginInit();
 				this->SuspendLayout();
@@ -198,96 +210,149 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label1
 				// 
 				this->label1->AutoSize = true;
-				this->label1->Location = System::Drawing::Point(56, 24);
+				this->label1->BackColor = System::Drawing::Color::Transparent;
+				this->label1->Cursor = System::Windows::Forms::Cursors::No;
+				this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label1->Location = System::Drawing::Point(60, 68);
 				this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label1->Name = L"label1";
-				this->label1->Size = System::Drawing::Size(42, 20);
+				this->label1->Size = System::Drawing::Size(48, 21);
 				this->label1->TabIndex = 0;
 				this->label1->Text = L"Nom";
+				this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				this->label1->Click += gcnew System::EventHandler(this, &CreerClient::label1_Click);
 				// 
 				// label2
 				// 
 				this->label2->AutoSize = true;
-				this->label2->Location = System::Drawing::Point(56, 69);
+				this->label2->BackColor = System::Drawing::Color::Transparent;
+				this->label2->Cursor = System::Windows::Forms::Cursors::No;
+				this->label2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label2->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label2->Location = System::Drawing::Point(34, 112);
 				this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label2->Name = L"label2";
-				this->label2->Size = System::Drawing::Size(64, 20);
+				this->label2->Size = System::Drawing::Size(70, 21);
 				this->label2->TabIndex = 1;
 				this->label2->Text = L"Prénom";
+				this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				this->label2->Click += gcnew System::EventHandler(this, &CreerClient::label2_Click);
 				// 
 				// label3
 				// 
 				this->label3->AutoSize = true;
-				this->label3->Location = System::Drawing::Point(56, 114);
+				this->label3->BackColor = System::Drawing::Color::Transparent;
+				this->label3->Cursor = System::Windows::Forms::Cursors::No;
+				this->label3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label3->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label3->Location = System::Drawing::Point(32, 156);
 				this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label3->Name = L"label3";
-				this->label3->Size = System::Drawing::Size(142, 20);
+				this->label3->Size = System::Drawing::Size(147, 21);
 				this->label3->TabIndex = 2;
 				this->label3->Text = L"Date de naissance";
+				this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				this->label3->Click += gcnew System::EventHandler(this, &CreerClient::label3_Click);
 				// 
 				// label4
 				// 
 				this->label4->AutoSize = true;
-				this->label4->Location = System::Drawing::Point(36, 176);
+				this->label4->BackColor = System::Drawing::Color::Transparent;
+				this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+					static_cast<System::Byte>(0)));
+				this->label4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label4->Location = System::Drawing::Point(85, 239);
 				this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label4->Name = L"label4";
-				this->label4->Size = System::Drawing::Size(158, 20);
+				this->label4->Size = System::Drawing::Size(216, 36);
 				this->label4->TabIndex = 3;
 				this->label4->Text = L"Adresse de livraison :";
+				this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// label5
 				// 
 				this->label5->AutoSize = true;
-				this->label5->Location = System::Drawing::Point(56, 206);
+				this->label5->BackColor = System::Drawing::Color::Transparent;
+				this->label5->Cursor = System::Windows::Forms::Cursors::No;
+				this->label5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label5->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label5->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label5->Location = System::Drawing::Point(32, 294);
 				this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label5->Name = L"label5";
-				this->label5->Size = System::Drawing::Size(138, 20);
+				this->label5->Size = System::Drawing::Size(149, 21);
 				this->label5->TabIndex = 4;
 				this->label5->Text = L"Numéro d\'adresse";
+				this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// label6
 				// 
 				this->label6->AutoSize = true;
-				this->label6->Location = System::Drawing::Point(56, 254);
+				this->label6->BackColor = System::Drawing::Color::Transparent;
+				this->label6->Cursor = System::Windows::Forms::Cursors::No;
+				this->label6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label6->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label6->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label6->Location = System::Drawing::Point(32, 347);
 				this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label6->Name = L"label6";
-				this->label6->Size = System::Drawing::Size(107, 20);
+				this->label6->Size = System::Drawing::Size(118, 21);
 				this->label6->TabIndex = 5;
 				this->label6->Text = L"Nom de la rue";
+				this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// label7
 				// 
 				this->label7->AutoSize = true;
-				this->label7->Location = System::Drawing::Point(56, 309);
+				this->label7->BackColor = System::Drawing::Color::Transparent;
+				this->label7->Cursor = System::Windows::Forms::Cursors::No;
+				this->label7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label7->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label7->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label7->Location = System::Drawing::Point(32, 402);
 				this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label7->Name = L"label7";
-				this->label7->Size = System::Drawing::Size(94, 20);
+				this->label7->Size = System::Drawing::Size(100, 21);
 				this->label7->TabIndex = 6;
 				this->label7->Text = L"Code postal";
+				this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// label8
 				// 
 				this->label8->AutoSize = true;
-				this->label8->Location = System::Drawing::Point(27, 365);
+				this->label8->BackColor = System::Drawing::Color::Transparent;
+				this->label8->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+					static_cast<System::Byte>(0)));
+				this->label8->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label8->Location = System::Drawing::Point(85, 475);
 				this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label8->Name = L"label8";
-				this->label8->Size = System::Drawing::Size(251, 20);
+				this->label8->Size = System::Drawing::Size(346, 36);
 				this->label8->TabIndex = 7;
-				this->label8->Text = L"Adresse de facturation différente\?";
+				this->label8->Text = L"Adresse de facturation différente \?";
+				this->label8->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				this->label8->Click += gcnew System::EventHandler(this, &CreerClient::label8_Click);
 				// 
 				// label24
 				// 
 				this->label24->AutoSize = true;
-				this->label24->Location = System::Drawing::Point(308, 206);
+				this->label24->BackColor = System::Drawing::Color::Transparent;
+				this->label24->Cursor = System::Windows::Forms::Cursors::No;
+				this->label24->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label24->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+					static_cast<System::Byte>(0)));
+				this->label24->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label24->Location = System::Drawing::Point(299, 401);
 				this->label24->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label24->Name = L"label24";
-				this->label24->Size = System::Drawing::Size(38, 20);
+				this->label24->Size = System::Drawing::Size(45, 21);
 				this->label24->TabIndex = 23;
 				this->label24->Text = L"Ville";
+				this->label24->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// button1
 				// 
@@ -302,13 +367,13 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// comboBoxMois
 				// 
-				this->comboBoxMois->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->comboBoxMois->BackColor = System::Drawing::Color::Gainsboro;
 				this->comboBoxMois->FormattingEnabled = true;
 				this->comboBoxMois->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
 					L"01", L"02", L"03", L"04", L"05", L"06", L"07",
 						L"08", L"09", L"10", L"11", L"12"
 				});
-				this->comboBoxMois->Location = System::Drawing::Point(301, 111);
+				this->comboBoxMois->Location = System::Drawing::Point(303, 154);
 				this->comboBoxMois->Margin = System::Windows::Forms::Padding(2);
 				this->comboBoxMois->Name = L"comboBoxMois";
 				this->comboBoxMois->Size = System::Drawing::Size(69, 28);
@@ -317,7 +382,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label27
 				// 
 				this->label27->AutoSize = true;
-				this->label27->Location = System::Drawing::Point(283, 114);
+				this->label27->Location = System::Drawing::Point(285, 157);
 				this->label27->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label27->Name = L"label27";
 				this->label27->Size = System::Drawing::Size(13, 20);
@@ -326,14 +391,14 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// comboBoxJour
 				// 
-				this->comboBoxJour->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->comboBoxJour->BackColor = System::Drawing::Color::Gainsboro;
 				this->comboBoxJour->FormattingEnabled = true;
 				this->comboBoxJour->Items->AddRange(gcnew cli::array< System::Object^  >(31) {
 					L"01", L"02", L"03", L"04", L"05", L"06", L"07",
 						L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25",
 						L"26", L"27", L"28", L"29", L"30", L"31"
 				});
-				this->comboBoxJour->Location = System::Drawing::Point(209, 111);
+				this->comboBoxJour->Location = System::Drawing::Point(211, 154);
 				this->comboBoxJour->Margin = System::Windows::Forms::Padding(2);
 				this->comboBoxJour->Name = L"comboBoxJour";
 				this->comboBoxJour->Size = System::Drawing::Size(69, 28);
@@ -343,7 +408,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label29
 				// 
 				this->label29->AutoSize = true;
-				this->label29->Location = System::Drawing::Point(374, 114);
+				this->label29->Location = System::Drawing::Point(376, 157);
 				this->label29->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label29->Name = L"label29";
 				this->label29->Size = System::Drawing::Size(13, 20);
@@ -352,7 +417,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// comboBoxAnnee
 				// 
-				this->comboBoxAnnee->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->comboBoxAnnee->BackColor = System::Drawing::Color::Gainsboro;
 				this->comboBoxAnnee->FormattingEnabled = true;
 				this->comboBoxAnnee->Items->AddRange(gcnew cli::array< System::Object^  >(123) {
 					L"2023", L"2022", L"2021", L"2020", L"2019",
@@ -366,7 +431,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 						L"1920", L"1919", L"1918", L"1917", L"1916", L"1915", L"1914", L"1913", L"1912", L"1911", L"1910", L"1909", L"1908", L"1907",
 						L"1906", L"1905", L"1904", L"1903", L"1902", L"1901"
 				});
-				this->comboBoxAnnee->Location = System::Drawing::Point(392, 111);
+				this->comboBoxAnnee->Location = System::Drawing::Point(394, 154);
 				this->comboBoxAnnee->Margin = System::Windows::Forms::Padding(2);
 				this->comboBoxAnnee->Name = L"comboBoxAnnee";
 				this->comboBoxAnnee->Size = System::Drawing::Size(96, 28);
@@ -374,38 +439,43 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// textBoxNom
 				// 
-				this->textBoxNom->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxNom->Location = System::Drawing::Point(112, 22);
+				this->textBoxNom->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxNom->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxNom->Location = System::Drawing::Point(116, 65);
 				this->textBoxNom->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxNom->Name = L"textBoxNom";
-				this->textBoxNom->Size = System::Drawing::Size(481, 26);
+				this->textBoxNom->Size = System::Drawing::Size(459, 26);
 				this->textBoxNom->TabIndex = 44;
 				this->textBoxNom->TextChanged += gcnew System::EventHandler(this, &CreerClient::textBoxNom_TextChanged);
 				// 
 				// textBoxPrenom
 				// 
-				this->textBoxPrenom->BackColor = System::Drawing::SystemColors::ActiveCaption;
+				this->textBoxPrenom->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxPrenom->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 				this->textBoxPrenom->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-				this->textBoxPrenom->Location = System::Drawing::Point(125, 66);
+				this->textBoxPrenom->Location = System::Drawing::Point(116, 109);
 				this->textBoxPrenom->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxPrenom->Name = L"textBoxPrenom";
-				this->textBoxPrenom->Size = System::Drawing::Size(468, 26);
+				this->textBoxPrenom->Size = System::Drawing::Size(459, 26);
 				this->textBoxPrenom->TabIndex = 45;
 				this->textBoxPrenom->TextChanged += gcnew System::EventHandler(this, &CreerClient::textBoxPrenom_TextChanged);
 				// 
 				// textBoxVille
 				// 
-				this->textBoxVille->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxVille->Location = System::Drawing::Point(352, 206);
+				this->textBoxVille->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxVille->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxVille->Location = System::Drawing::Point(356, 401);
 				this->textBoxVille->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxVille->Name = L"textBoxVille";
 				this->textBoxVille->Size = System::Drawing::Size(241, 26);
 				this->textBoxVille->TabIndex = 48;
+				this->textBoxVille->TextChanged += gcnew System::EventHandler(this, &CreerClient::textBoxVille_TextChanged);
 				// 
 				// textBoxRue
 				// 
-				this->textBoxRue->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxRue->Location = System::Drawing::Point(171, 254);
+				this->textBoxRue->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxRue->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxRue->Location = System::Drawing::Point(166, 347);
 				this->textBoxRue->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxRue->Name = L"textBoxRue";
 				this->textBoxRue->Size = System::Drawing::Size(422, 26);
@@ -413,8 +483,9 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// textBoxCodePostal
 				// 
-				this->textBoxCodePostal->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxCodePostal->Location = System::Drawing::Point(156, 306);
+				this->textBoxCodePostal->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxCodePostal->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxCodePostal->Location = System::Drawing::Point(149, 402);
 				this->textBoxCodePostal->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxCodePostal->Name = L"textBoxCodePostal";
 				this->textBoxCodePostal->Size = System::Drawing::Size(122, 26);
@@ -422,7 +493,8 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// UpDownNumAdr
 				// 
-				this->UpDownNumAdr->Location = System::Drawing::Point(209, 204);
+				this->UpDownNumAdr->BackColor = System::Drawing::Color::Gainsboro;
+				this->UpDownNumAdr->Location = System::Drawing::Point(192, 294);
 				this->UpDownNumAdr->Name = L"UpDownNumAdr";
 				this->UpDownNumAdr->Size = System::Drawing::Size(79, 26);
 				this->UpDownNumAdr->TabIndex = 64;
@@ -432,16 +504,23 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label9
 				// 
 				this->label9->AutoSize = true;
-				this->label9->Location = System::Drawing::Point(27, 424);
+				this->label9->BackColor = System::Drawing::Color::Transparent;
+				this->label9->Cursor = System::Windows::Forms::Cursors::No;
+				this->label9->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label9->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label9->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label9->Location = System::Drawing::Point(33, 534);
 				this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label9->Name = L"label9";
-				this->label9->Size = System::Drawing::Size(138, 20);
+				this->label9->Size = System::Drawing::Size(149, 21);
 				this->label9->TabIndex = 65;
 				this->label9->Text = L"Numéro d\'adresse";
+				this->label9->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// UpDownAdr2
 				// 
-				this->UpDownAdr2->Location = System::Drawing::Point(170, 422);
+				this->UpDownAdr2->BackColor = System::Drawing::Color::Gainsboro;
+				this->UpDownAdr2->Location = System::Drawing::Point(189, 534);
 				this->UpDownAdr2->Name = L"UpDownAdr2";
 				this->UpDownAdr2->Size = System::Drawing::Size(79, 26);
 				this->UpDownAdr2->TabIndex = 66;
@@ -449,8 +528,9 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// 
 				// textBoxVille2
 				// 
-				this->textBoxVille2->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxVille2->Location = System::Drawing::Point(416, 421);
+				this->textBoxVille2->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxVille2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxVille2->Location = System::Drawing::Point(91, 681);
 				this->textBoxVille2->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxVille2->Name = L"textBoxVille2";
 				this->textBoxVille2->Size = System::Drawing::Size(241, 26);
@@ -459,27 +539,40 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label10
 				// 
 				this->label10->AutoSize = true;
-				this->label10->Location = System::Drawing::Point(374, 424);
+				this->label10->BackColor = System::Drawing::Color::Transparent;
+				this->label10->Cursor = System::Windows::Forms::Cursors::No;
+				this->label10->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label10->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label10->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label10->Location = System::Drawing::Point(32, 682);
 				this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label10->Name = L"label10";
-				this->label10->Size = System::Drawing::Size(38, 20);
+				this->label10->Size = System::Drawing::Size(45, 21);
 				this->label10->TabIndex = 68;
 				this->label10->Text = L"Ville";
+				this->label10->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// label11
 				// 
 				this->label11->AutoSize = true;
-				this->label11->Location = System::Drawing::Point(27, 479);
+				this->label11->BackColor = System::Drawing::Color::Transparent;
+				this->label11->Cursor = System::Windows::Forms::Cursors::No;
+				this->label11->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label11->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label11->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label11->Location = System::Drawing::Point(33, 589);
 				this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label11->Name = L"label11";
-				this->label11->Size = System::Drawing::Size(107, 20);
+				this->label11->Size = System::Drawing::Size(118, 21);
 				this->label11->TabIndex = 69;
 				this->label11->Text = L"Nom de la rue";
+				this->label11->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// textBoxRue2
 				// 
-				this->textBoxRue2->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxRue2->Location = System::Drawing::Point(138, 476);
+				this->textBoxRue2->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxRue2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxRue2->Location = System::Drawing::Point(166, 589);
 				this->textBoxRue2->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxRue2->Name = L"textBoxRue2";
 				this->textBoxRue2->Size = System::Drawing::Size(422, 26);
@@ -488,29 +581,52 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				// label12
 				// 
 				this->label12->AutoSize = true;
-				this->label12->Location = System::Drawing::Point(36, 549);
+				this->label12->BackColor = System::Drawing::Color::Transparent;
+				this->label12->Cursor = System::Windows::Forms::Cursors::No;
+				this->label12->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+				this->label12->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold));
+				this->label12->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label12->Location = System::Drawing::Point(32, 633);
 				this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 				this->label12->Name = L"label12";
-				this->label12->Size = System::Drawing::Size(94, 20);
+				this->label12->Size = System::Drawing::Size(100, 21);
 				this->label12->TabIndex = 71;
 				this->label12->Text = L"Code postal";
+				this->label12->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 				// 
 				// textBoxCP2
 				// 
-				this->textBoxCP2->BackColor = System::Drawing::SystemColors::ActiveCaption;
-				this->textBoxCP2->Location = System::Drawing::Point(138, 546);
+				this->textBoxCP2->BackColor = System::Drawing::Color::Gainsboro;
+				this->textBoxCP2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+				this->textBoxCP2->Location = System::Drawing::Point(146, 633);
 				this->textBoxCP2->Margin = System::Windows::Forms::Padding(2);
 				this->textBoxCP2->Name = L"textBoxCP2";
 				this->textBoxCP2->Size = System::Drawing::Size(122, 26);
 				this->textBoxCP2->TabIndex = 72;
+				// 
+				// label13
+				// 
+				this->label13->AutoSize = true;
+				this->label13->BackColor = System::Drawing::Color::Transparent;
+				this->label13->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+					static_cast<System::Byte>(0)));
+				this->label13->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+				this->label13->Location = System::Drawing::Point(85, 18);
+				this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+				this->label13->Name = L"label13";
+				this->label13->Size = System::Drawing::Size(198, 36);
+				this->label13->TabIndex = 73;
+				this->label13->Text = L"Infos personnelles :";
+				this->label13->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+				this->label13->Click += gcnew System::EventHandler(this, &CreerClient::label13_Click);
 				// 
 				// CreerClient
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 				this->AutoScroll = true;
-				this->BackColor = System::Drawing::SystemColors::HighlightText;
 				this->ClientSize = System::Drawing::Size(685, 725);
+				this->Controls->Add(this->label13);
 				this->Controls->Add(this->textBoxCP2);
 				this->Controls->Add(this->label12);
 				this->Controls->Add(this->textBoxRue2);
@@ -540,6 +656,7 @@ private: System::Windows::Forms::TextBox^ textBoxCP2;
 				this->Controls->Add(this->label3);
 				this->Controls->Add(this->label2);
 				this->Controls->Add(this->label1);
+				this->ForeColor = System::Drawing::SystemColors::ControlLightLight;
 				this->Margin = System::Windows::Forms::Padding(2);
 				this->MaximizeBox = false;
 				this->Name = L"CreerClient";
@@ -714,6 +831,12 @@ private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBoxVille_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label13_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 	}

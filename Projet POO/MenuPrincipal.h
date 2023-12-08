@@ -3,6 +3,7 @@
 #include "ModifierClient.h"
 #include "SupprimerClient.h"
 #include "AfficherClient.h"
+#include "DebugAdresse.h"
 
 using namespace ProjetPOO::P6new;
 
@@ -66,6 +67,10 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::PictureBox^ pictureBox5;
 	private: System::Windows::Forms::PictureBox^ pictureBox6;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::ToolStripMenuItem^ debugToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ tableAdresseToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ tableClientToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ tablePossede1ToolStripMenuItem;
 
 	protected:
 
@@ -97,6 +102,10 @@ namespace ProjetPOO {
 			this->stockToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->statistiquesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->commandesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->debugToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tableAdresseToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tableClientToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tablePossede1ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
@@ -120,16 +129,18 @@ namespace ProjetPOO {
 			this->menuStrip1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->menuStrip1->ForeColor = System::Drawing::Color::White;
+			this->menuStrip1->GripMargin = System::Windows::Forms::Padding(2, 2, 0, 2);
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
 				this->clientToolStripMenuItem,
-					this->personnelToolStripMenuItem, this->stockToolStripMenuItem, this->statistiquesToolStripMenuItem, this->commandesToolStripMenuItem
+					this->personnelToolStripMenuItem, this->stockToolStripMenuItem, this->statistiquesToolStripMenuItem, this->commandesToolStripMenuItem,
+					this->debugToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(67, 92);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(4, 2, 0, 2);
 			this->menuStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
-			this->menuStrip1->Size = System::Drawing::Size(631, 48);
+			this->menuStrip1->Size = System::Drawing::Size(901, 48);
 			this->menuStrip1->TabIndex = 5;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -150,28 +161,28 @@ namespace ProjetPOO {
 			this->créerToolStripMenuItem->BackColor = System::Drawing::Color::LightSkyBlue;
 			this->créerToolStripMenuItem->ForeColor = System::Drawing::Color::MidnightBlue;
 			this->créerToolStripMenuItem->Name = L"créerToolStripMenuItem";
-			this->créerToolStripMenuItem->Size = System::Drawing::Size(270, 36);
+			this->créerToolStripMenuItem->Size = System::Drawing::Size(212, 36);
 			this->créerToolStripMenuItem->Text = L"Créer";
 			this->créerToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuPrincipal::créerToolStripMenuItem_Click);
 			// 
 			// modifierToolStripMenuItem
 			// 
 			this->modifierToolStripMenuItem->Name = L"modifierToolStripMenuItem";
-			this->modifierToolStripMenuItem->Size = System::Drawing::Size(270, 36);
+			this->modifierToolStripMenuItem->Size = System::Drawing::Size(212, 36);
 			this->modifierToolStripMenuItem->Text = L"Modifier";
 			this->modifierToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuPrincipal::modifierToolStripMenuItem_Click);
 			// 
 			// supprimerToolStripMenuItem
 			// 
 			this->supprimerToolStripMenuItem->Name = L"supprimerToolStripMenuItem";
-			this->supprimerToolStripMenuItem->Size = System::Drawing::Size(270, 36);
+			this->supprimerToolStripMenuItem->Size = System::Drawing::Size(212, 36);
 			this->supprimerToolStripMenuItem->Text = L"Supprimer";
 			this->supprimerToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuPrincipal::supprimerToolStripMenuItem_Click);
 			// 
 			// afficherToolStripMenuItem
 			// 
 			this->afficherToolStripMenuItem->Name = L"afficherToolStripMenuItem";
-			this->afficherToolStripMenuItem->Size = System::Drawing::Size(270, 36);
+			this->afficherToolStripMenuItem->Size = System::Drawing::Size(212, 36);
 			this->afficherToolStripMenuItem->Text = L"Afficher";
 			this->afficherToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuPrincipal::afficherToolStripMenuItem_Click);
 			// 
@@ -210,6 +221,7 @@ namespace ProjetPOO {
 			this->afficherToolStripMenuItem1->Name = L"afficherToolStripMenuItem1";
 			this->afficherToolStripMenuItem1->Size = System::Drawing::Size(270, 36);
 			this->afficherToolStripMenuItem1->Text = L"Afficher";
+			this->afficherToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MenuPrincipal::afficherToolStripMenuItem1_Click);
 			// 
 			// stockToolStripMenuItem
 			// 
@@ -234,6 +246,36 @@ namespace ProjetPOO {
 			this->commandesToolStripMenuItem->Name = L"commandesToolStripMenuItem";
 			this->commandesToolStripMenuItem->Size = System::Drawing::Size(143, 32);
 			this->commandesToolStripMenuItem->Text = L"Commandes";
+			// 
+			// debugToolStripMenuItem
+			// 
+			this->debugToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->tableAdresseToolStripMenuItem,
+					this->tableClientToolStripMenuItem, this->tablePossede1ToolStripMenuItem
+			});
+			this->debugToolStripMenuItem->ForeColor = System::Drawing::Color::Black;
+			this->debugToolStripMenuItem->Name = L"debugToolStripMenuItem";
+			this->debugToolStripMenuItem->Size = System::Drawing::Size(90, 44);
+			this->debugToolStripMenuItem->Text = L"Debug";
+			// 
+			// tableAdresseToolStripMenuItem
+			// 
+			this->tableAdresseToolStripMenuItem->Name = L"tableAdresseToolStripMenuItem";
+			this->tableAdresseToolStripMenuItem->Size = System::Drawing::Size(257, 36);
+			this->tableAdresseToolStripMenuItem->Text = L"Table Adresse";
+			this->tableAdresseToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuPrincipal::tableAdresseToolStripMenuItem_Click);
+			// 
+			// tableClientToolStripMenuItem
+			// 
+			this->tableClientToolStripMenuItem->Name = L"tableClientToolStripMenuItem";
+			this->tableClientToolStripMenuItem->Size = System::Drawing::Size(257, 36);
+			this->tableClientToolStripMenuItem->Text = L"Table Client ";
+			// 
+			// tablePossede1ToolStripMenuItem
+			// 
+			this->tablePossede1ToolStripMenuItem->Name = L"tablePossede1ToolStripMenuItem";
+			this->tablePossede1ToolStripMenuItem->Size = System::Drawing::Size(257, 36);
+			this->tablePossede1ToolStripMenuItem->Text = L"Table Possede1";
 			// 
 			// pictureBox1
 			// 
@@ -373,6 +415,13 @@ namespace ProjetPOO {
 	}
 	private: System::Void MenuPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void tableAdresseToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	DebugAdresse obj;
+	obj.ShowDialog();
+}
+private: System::Void afficherToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+}
 };
 }
 

@@ -123,11 +123,13 @@
   <ItemGroup>
     <ClCompile Include="Adresse.cpp" />
     <ClCompile Include="AfficherClient.cpp" />
+    <ClCompile Include="AfficherPersonnel.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="CreerClient.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="ModifierClient.cpp" />
     <ClCompile Include="ModifierClient1.cpp" />
+    <ClCompile Include="DebugAdresse.cpp" />
     <ClCompile Include="SupprimerClient.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -135,8 +137,14 @@
     <ClInclude Include="AfficherClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="AfficherPersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Client.h" />
     <ClInclude Include="CreerClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DebugAdresse.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -154,6 +162,9 @@
     <EmbeddedResource Include="AfficherClient.resx">
       <DependentUpon>AfficherClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AfficherPersonnel.resx">
+      <DependentUpon>AfficherPersonnel.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreerClient.resx">
       <DependentUpon>CreerClient.h</DependentUpon>
     </EmbeddedResource>
@@ -163,9 +174,20 @@
     <EmbeddedResource Include="ModifierClient.resx">
       <DependentUpon>ModifierClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DebugAdresse.resx">
+      <DependentUpon>DebugAdresse.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressource.resx" />
     <EmbeddedResource Include="SupprimerClient.resx">
       <DependentUpon>SupprimerClient.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\image-removebg-preview (15).png" />
+    <Image Include="..\..\..\..\Downloads\image-removebg-preview (16).png" />
+    <Image Include="..\..\..\..\Downloads\image-removebg-preview (17).png" />
+    <Image Include="..\..\..\..\Downloads\png-transparent-computer-icons-house-house-angle-building-black.png" />
+    <Image Include="..\..\..\..\Downloads\triangle_background2-6eded4a7ad80c007fb65f02c828e5dd0.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

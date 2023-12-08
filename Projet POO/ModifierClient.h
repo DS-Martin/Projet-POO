@@ -632,7 +632,7 @@ private: void ChargerAdresseFacturation(int clientId) {
 			textBoxCodePostal2->Text = "";
 			// Effacez d'autres champs ici si nécessaire
 
-			MessageBox::Show("Aucune adresse de facturation trouvée pour le client avec l'ID : " + clientId, "Information", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			
 		}
 	}
 	catch (Exception^ ex) {
@@ -684,7 +684,7 @@ private: void ChargerAdresseLivraison(int clientId) {
 			textBoxCodePostal->Text = "";
 			adresseLivraisonId = -1; // Valeur pour indiquer qu'aucune adresse n'est chargée
 
-			MessageBox::Show("Aucune adresse de livraison trouvée pour le client avec l'ID : " + clientId, "Information", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			
 		}
 	}
 	catch (Exception^ ex) {
