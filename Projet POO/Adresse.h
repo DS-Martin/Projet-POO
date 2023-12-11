@@ -12,11 +12,10 @@ namespace ProjetPOO {
         System::String^ codePostal;
 
     public:
-        // Constructeur
+
         Adresse();
         Adresse(int numero, System::String^ nomRue, System::String^ nomVille, System::String^ codePostal);
 
-        // Propriétés (getters et setters)
         property int Numero {
             int get() { return numero; }
             void set(int value) { numero = value; }

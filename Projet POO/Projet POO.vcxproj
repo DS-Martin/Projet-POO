@@ -123,28 +123,63 @@
   <ItemGroup>
     <ClCompile Include="Adresse.cpp" />
     <ClCompile Include="AfficherClient.cpp" />
+    <ClCompile Include="AfficherCommande.cpp" />
     <ClCompile Include="AfficherPersonnel.cpp" />
+    <ClCompile Include="CatalogueProduit.cpp" />
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="CreerArticle.cpp" />
     <ClCompile Include="CreerClient.cpp" />
+    <ClCompile Include="CreerCommande.cpp" />
+    <ClCompile Include="CreerPersonnel.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="ModifierClient.cpp" />
-    <ClCompile Include="ModifierClient1.cpp" />
     <ClCompile Include="DebugAdresse.cpp" />
+    <ClCompile Include="ModifierCommande.cpp" />
+    <ClCompile Include="ModifierPersonnel.cpp" />
+    <ClCompile Include="ModifStock.cpp" />
+    <ClCompile Include="Personnel.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Statistiques.cpp" />
+    <ClCompile Include="Stock.cpp" />
     <ClCompile Include="SupprimerClient.cpp" />
+    <ClCompile Include="SupprimerCommande.cpp" />
+    <ClCompile Include="SupprimerPersonnel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adresse.h" />
     <ClInclude Include="AfficherClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="AfficherCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="AfficherPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CatalogueProduit.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="CreerArticle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CreerClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CreerCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreerPersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="DebugAdresse.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModifierCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModifierPersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModifStock.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -154,7 +189,20 @@
     <ClInclude Include="ModifierClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Personnel.h" />
+    <ClInclude Include="Statistiques.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="SupprimerClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SupprimerCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SupprimerPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -162,11 +210,23 @@
     <EmbeddedResource Include="AfficherClient.resx">
       <DependentUpon>AfficherClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AfficherCommande.resx">
+      <DependentUpon>AfficherCommande.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AfficherPersonnel.resx">
       <DependentUpon>AfficherPersonnel.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreerArticle.resx">
+      <DependentUpon>CreerArticle.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreerClient.resx">
       <DependentUpon>CreerClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreerCommande.resx">
+      <DependentUpon>CreerCommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreerPersonnel.resx">
+      <DependentUpon>CreerPersonnel.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.h</DependentUpon>
@@ -177,9 +237,30 @@
     <EmbeddedResource Include="DebugAdresse.resx">
       <DependentUpon>DebugAdresse.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModifierCommande.resx">
+      <DependentUpon>ModifierCommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierPersonnel.resx">
+      <DependentUpon>ModifierPersonnel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifStock.resx">
+      <DependentUpon>ModifStock.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ressource.resx" />
+    <EmbeddedResource Include="Statistiques.resx">
+      <DependentUpon>Statistiques.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SupprimerClient.resx">
       <DependentUpon>SupprimerClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerCommande.resx">
+      <DependentUpon>SupprimerCommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerPersonnel.resx">
+      <DependentUpon>SupprimerPersonnel.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
